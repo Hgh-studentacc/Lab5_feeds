@@ -1,22 +1,3 @@
----
-title: "my-vignette"
-output: rmarkdown::html_vignette
-vignette: >
-  %\VignetteIndexEntry{my-vignette}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
----
-
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-```
-
-```{r setup}
-library(Lab5)
-```
 ## Section 1: Introduction of API
 As requested in assignment the main objective in this task is to retrieve data from selected api and after some preparation, make some output through the methods we learned in R.
 Kolada API contains interesting factors known as key indicators related to different municipalities across Sweden. Here first we get some economic indicators mentioned in "factors.xlsx" for 12 municipalities [mentioned here](https://en.wikipedia.org/wiki/List_of_municipalities_of_Sweden_by_wealth) including Linkoping.
