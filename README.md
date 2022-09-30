@@ -1,3 +1,8 @@
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/muhis097/Lab5/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/muhis097/Lab5/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
+
+
 ## Section 1: Introduction of API
 As requested in assignment the main objective in this task is to retrieve data from selected api and after some preparation, make some output through the methods we learned in R.
 Kolada API contains interesting factors known as key indicators related to different municipalities across Sweden. Here first we get some economic indicators mentioned in "factors.xlsx" for 12 municipalities [mentioned here](https://en.wikipedia.org/wiki/List_of_municipalities_of_Sweden_by_wealth) including Linkoping.
