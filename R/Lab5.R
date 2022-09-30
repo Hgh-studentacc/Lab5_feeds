@@ -1,3 +1,4 @@
+#' @export
 KoladaAPI=function(){
   #rm(list=ls())
   library(httr)

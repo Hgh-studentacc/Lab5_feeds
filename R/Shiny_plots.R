@@ -1,4 +1,4 @@
-
+#' @export
 #plot all functions using corresponding names
 plotfunction_ind=function(){
   library(httr)
