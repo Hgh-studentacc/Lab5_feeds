@@ -13,8 +13,8 @@ plotfunction_ind=function(){
   library(shiny)
   library(readxl)
   library(ggplot2)
-  url1="https://github.com/Hgh-studentacc/personal_uploads/raw/main/List_kommun.xlsx"
-  url2="https://github.com/Hgh-studentacc/personal_uploads/raw/main/factors.xlsx"
+  url1="https://raw.githubusercontent.com/Hgh-studentacc/personal_uploads/main/List_kommun.xlsx"
+  url2="https://raw.githubusercontent.com/Hgh-studentacc/personal_uploads/main/factors.xlsx"
   GET(url1, write_disk(tfile1 <- tempfile(fileext = ".xlsx")))
   GET(url2, write_disk(tfiles <- tempfile(fileext = ".xlsx")))
   List_kommun = read_excel(tfile1,col_types = "text")
