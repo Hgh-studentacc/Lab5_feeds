@@ -2,3 +2,7 @@
 
 export(KoladaAPI)
 export(plotfunction_ind)
+import(ggplot2)
+import(httr)
+import(readxl)
+import(shiny)

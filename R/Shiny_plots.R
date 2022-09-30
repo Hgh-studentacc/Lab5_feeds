@@ -1,12 +1,20 @@
-#' @export
+#' Shinyapp based on KoladaAPI
+#' @author Hirbod & Muhaiminul
+#' @field noinput 
+
+#' @import readxl
+#' @import httr
+#' @import ggplot2
+#' @import shiny
+#' @export plotfunction_ind
 #plot all functions using corresponding names
 plotfunction_ind=function(){
   library(httr)
   library(shiny)
   library(readxl)
   library(ggplot2)
-  url1="https://raw.githubusercontent.com/muhis097/Lab5/main/data/List_kommun.xlsx"
-  url2="https://raw.githubusercontent.com/muhis097/Lab5/main/data/factors.xlsx"
+  url1="https://github.com/Hgh-studentacc/personal_uploads/raw/main/List_kommun.xlsx"
+  url2="https://github.com/Hgh-studentacc/personal_uploads/raw/main/factors.xlsx"
   GET(url1, write_disk(tfile1 <- tempfile(fileext = ".xlsx")))
   GET(url2, write_disk(tfiles <- tempfile(fileext = ".xlsx")))
   List_kommun = read_excel(tfile1,col_types = "text")

@@ -1,11 +1,17 @@
-#' @export
+#' KoladaAPI Main function
+#' @author Hirbod & Muhaiminul
+#' @field noinput 
+
+#' @import readxl
+#' @import httr
+#' @export KoladaAPI
 KoladaAPI=function(){
   #rm(list=ls())
   library(httr)
   library(readxl)
   
   #library(jsonlite) #just for test comments
-  url1="https://raw.githubusercontent.com/muhis097/Lab5/main/data/List_kommun.xlsx"
+  url1="https://github.com/Hgh-studentacc/personal_uploads/raw/main/List_kommun.xlsx"
   GET(url1, write_disk(tfile1 <- tempfile(fileext = ".xlsx")))
   List_kommun = read_excel(tfile1,col_types = "text")
   rich=c(28,121,235,252,26,151,129,251,199,32,261,125)
