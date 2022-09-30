@@ -5,7 +5,7 @@ KoladaAPI=function(){
   
   #library(jsonlite) #just for test comments
   
-  List_kommun = read_excel("List_kommun.xlsx",col_types = "text")
+  List_kommun = read_excel("~/data/List_kommun.xlsx",col_types = "text")
   rich=c(28,121,235,252,26,151,129,251,199,32,261,125)
   richnames=List_kommun$Kommun[c(29,122,236,253,27,152,130,252,200,33,262,126)-1]
   richcode=List_kommun$Kod[c(29,122,236,253,27,152,130,252,200,33,262,126)-1]
