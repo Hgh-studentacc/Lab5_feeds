@@ -4,6 +4,7 @@
 
 #' @import readxl
 #' @import httr
+#' @import methods
 #' @export KoladaAPI
 KoladaAPI=function(){
   #rm(list=ls())

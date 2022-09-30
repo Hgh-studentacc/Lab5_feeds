@@ -6,6 +6,7 @@
 #' @import httr
 #' @import ggplot2
 #' @import shiny
+#' @import methods
 #' @export plotfunction_ind
 #plot all functions using corresponding names
 plotfunction_ind=function(){
