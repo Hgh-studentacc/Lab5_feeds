@@ -4,8 +4,9 @@ KoladaAPI=function(){
   library(readxl)
   
   #library(jsonlite) #just for test comments
-  
-  List_kommun = read_excel("List_kommun.xlsx",col_types = "text")
+  url1="https://raw.githubusercontent.com/muhis097/Lab5/main/data/List_kommun.xlsx"
+  GET(url1, write_disk(tfile1 <- tempfile(fileext = ".xlsx")))
+  List_kommun = read_excel(tfile1,col_types = "text")
   rich=c(28,121,235,252,26,151,129,251,199,32,261,125)
   richnames=List_kommun$Kommun[c(29,122,236,253,27,152,130,252,200,33,262,126)-1]
   richcode=List_kommun$Kod[c(29,122,236,253,27,152,130,252,200,33,262,126)-1]
