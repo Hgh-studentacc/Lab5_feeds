@@ -10,10 +10,10 @@
 #' @export plotfunction_ind
 #plot all functions using corresponding names
 plotfunction_ind=function(){
-  library(httr)
-  library(shiny)
-  library(readxl)
-  library(ggplot2)
+  # library(httr)
+  # library(shiny)
+  # library(readxl)
+  # library(ggplot2)
   url1="https://raw.githubusercontent.com/Hgh-studentacc/personal_uploads/main/List_kommun.xlsx"
   url2="https://raw.githubusercontent.com/Hgh-studentacc/personal_uploads/main/factors.xlsx"
   GET(url1, write_disk(tfile1 <- tempfile(fileext = ".xlsx")))

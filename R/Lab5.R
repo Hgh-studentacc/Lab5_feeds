@@ -8,8 +8,8 @@
 #' @export KoladaAPI
 KoladaAPI=function(){
   #rm(list=ls())
-  library(httr)
-  library(readxl)
+  # library(httr)
+  # library(readxl)
   
   #library(jsonlite) #just for test comments
   url1="https://raw.githubusercontent.com/Hgh-studentacc/personal_uploads/main/List_kommun.xlsx"

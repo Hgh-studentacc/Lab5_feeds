@@ -1,13 +1,3 @@
-library(httr)
-library(shiny)
-library(readxl)
-library(ggplot2)
-url1="https://raw.githubusercontent.com/muhis097/Lab5/main/data/List_kommun.xlsx"
-url2="https://raw.githubusercontent.com/muhis097/Lab5/main/data/factors.xlsx"
-GET(url1, write_disk(tfile1 <- tempfile(fileext = ".xlsx")))
-GET(url2, write_disk(tfiles <- tempfile(fileext = ".xlsx")))
-List_kommun = read_excel(tfile1,col_types = "text")
-List_factors = read_excel(tfiles,col_types = "text",col_names=FALSE)
 outlist=KoladaAPI()
 da=matrix(outlist[[1]],ncol=4)
 a=colnames(da)=names(outlist[[1]])
@@ -26,3 +16,14 @@ test_that("Checking variable type", {
 })
 
 
+test_that("function should be called without parameter", {
+  expect_error(KoladaAPI(1))
+  expect_error(KoladaAPI("Stockholm"))
+})
+
+
+test_that("Checking correctness of dimension of output", {
+  expect_length(da, 4)
+  expect_length(a, 4)
+  
+})
