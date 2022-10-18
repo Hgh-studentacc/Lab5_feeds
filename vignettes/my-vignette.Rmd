@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 
 ```{r setup}
 library(Lab5)
+library(Lab5.extra)
 ```
 ## Section 1: Introduction of API
 As requested in assignment the main objective in this task is to retrieve data from selected api and after some preparation, make some output through the methods we learned in R.
